@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title>Mili</title>
+  </head>
+  <link rel="stylesheet" href="Style.css" type="text/css" media="all" />
+  <body>
+    <div id="enter">
+      <h1 id="ask" class="ask">Mili, There is a surprise for you..</h1>
+      <button id="Btn"class="btn">open it</button>
+    </div>
+   <div id="propose">
+     <h1 class="love">I love you ❤️❤️</h1>
+   </div>
+    
+    
+    <script>
+      var btn = document.getElementById('Btn');
+      btn.addEventListener("click", function(){
+        document.getElementById("propose").style.display= "block";
+        
+        document.getElementById("enter").style.display= "none";
+        document.body.style.backgroundImage="url('love-bg.png')";
+      })
+    </script>
+  </body>
+</html>
